@@ -1,0 +1,284 @@
+@charset "UTF-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+.body_back-img {
+  position: absolut;
+  max-width: 1600px;
+  width: 100%;
+  max-height: 6620px;
+  height: 100%;
+  z-index: -100;
+}
+
+.BodyBackground {
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 1600px;
+  height: 100%;
+  max-height: 6620px;
+  background-image: url("/img/Rectangle743.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 150% 1045px;
+  background-color: gren;
+}
+
+/* block content 1 */
+.block-content-1 {
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 1600px;
+  height: 100%;
+  max-height: 6620px;
+  /*munu */
+}
+
+.block-content-1 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(40, 45, 45);
+  font: normal 400 130%/1.5 -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+nav {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1em;
+}
+
+a {
+  position: relative;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  opacity: 0.7;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.51, 0.92, 0.24, 1);
+  transition: opacity 0.3s cubic-bezier(0.51, 0.92, 0.24, 1);
+}
+
+a::after {
+  --scale: 0;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 3px;
+  background: linear-gradient(135deg, rgb(115, 250, 200), rgb(0, 190, 225));
+  -webkit-transform: scaleX(var(--scale));
+  transform: scaleX(var(--scale));
+  -webkit-transform-origin: var(--x) 50%;
+  transform-origin: var(--x) 50%;
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.51, 0.92, 0.24, 1);
+  transition: -webkit-transform 0.3s cubic-bezier(0.51, 0.92, 0.24, 1);
+  transition: transform 0.3s cubic-bezier(0.51, 0.92, 0.24, 1);
+  transition: transform 0.3s cubic-bezier(0.51, 0.92, 0.24, 1), -webkit-transform 0.3s cubic-bezier(0.51, 0.92, 0.24, 1);
+}
+
+a:hover {
+  opacity: 1;
+}
+
+a:hover::after {
+  --scale: 1;
+  /* block content 1 */
+}
+
+/* родитель */
+.block .block__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.block .block__element_1 {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+.block .block__element_1 .block-content-2__title {
+  position: absolute;
+  width: 847.89px;
+  height: 181.3px;
+  left: 103.44px;
+  top: 194.56px;
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 66.3276px;
+  line-height: 137.4%;
+  color: #FFFFFF;
+}
+
+.block .block__element_1 .block-content-2__text {
+  width: 657.75px;
+  height: 88.44px;
+  left: 103.44px;
+  top: 396.86px;
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26.531px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+
+.block .contantBlock1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+/* flex-элемент №2 */
+* * &__element_2 * * order: 2 */
+/* flex-элемент №3 */
+* * &__element_3 * * order: 3 */
+/* flex-элемент №4 */
+* * &__element_4 * * order: 4 */
+/* контент */
+* * &__content * * background-color: #18b5a4
+/* плюс прочие стили для текста, отступы */
+/* block content 2 */
+* * .box-slider1 * margin: 100px 0 120px 0 */
+
+/* block content 3 */
+/* block content 4 */
+.box-slider2 {
+  padding-bottom: 226px;
+}
+
+.mySw, .mySw2 {
+  opacity: 1;
+  padding: 0px 10px;
+}
+
+.mySw {
+  padding-top: 10px;
+}
+
+/* block content 5 */
